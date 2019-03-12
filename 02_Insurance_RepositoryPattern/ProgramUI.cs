@@ -50,7 +50,15 @@ namespace _02_Insurance_RepositoryPattern
 
         private void ViewInformation()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"Hello {_user.Name}, here is your information:");
+
+            List<Vehicle> vehicles = _vehicleRepo.GetVehicleList();
+            foreach (Vehicle vehicle in vehicles)
+            {
+                Console.WriteLine($"{vehicle.Year} {vehicle.Make} {vehicle.Model}");
+            }
+
+            Console.ReadLine();
         }
 
         private void Register()

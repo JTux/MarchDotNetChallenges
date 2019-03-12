@@ -8,6 +8,7 @@ namespace _02_Insurance_RepositoryPattern
 {
     public class ProgramUI
     {
+        private VehicleRepository _vehicleRepo = new VehicleRepository();
         private User _user = new User();
 
         public void Run()
@@ -24,7 +25,7 @@ namespace _02_Insurance_RepositoryPattern
 
                 string inputAsString = Console.ReadLine();
                 //int input = int.Parse(inputAsString);
-                if(!int.TryParse(inputAsString, out int input))
+                if (!int.TryParse(inputAsString, out int input))
                 {
                     continue;
                 }
@@ -47,6 +48,11 @@ namespace _02_Insurance_RepositoryPattern
             }
         }
 
+        private void ViewInformation()
+        {
+            throw new NotImplementedException();
+        }
+
         private void Register()
         {
             Console.WriteLine("Enter your full name:");
@@ -60,7 +66,7 @@ namespace _02_Insurance_RepositoryPattern
                 "2. Female\n" +
                 "3. Other");
             string genderAsString = Console.ReadLine().ToLower();
-            switch(genderAsString)
+            switch (genderAsString)
             {
                 case "male":
                 case "1":
@@ -76,6 +82,58 @@ namespace _02_Insurance_RepositoryPattern
                     _user.Gender = GenderType.Other;
                     break;
             }
+        }
+
+        private void RegisterVehicle()
+        {
+            Vehicle newVehicle = new Vehicle();
+
+            //Make
+            Console.WriteLine("Enter the Make of the vehicle:");
+            newVehicle.Make = Console.ReadLine();
+
+            //Model
+            Console.WriteLine("Enter the Model of the vehicle:");
+            newVehicle.Model = Console.ReadLine();
+
+            //Year
+            Console.WriteLine("Enter the Year of the vehicle:");
+            newVehicle.Year = int.Parse(Console.ReadLine());
+
+            //Color
+            Console.WriteLine("Enter the color of the vehicle:");
+            newVehicle.Color = Console.ReadLine();
+
+            //Type of Vehicle
+            Console.WriteLine("Enter the type of vehicle:\n" +
+                "1. Car\n" +
+                "2. Boat\n" +
+                "3. Motorcycle\n" +
+                "4. Plane");
+
+            string vehicleTypeAsString = Console.ReadLine().ToLower();
+            switch (vehicleTypeAsString)
+            {
+                case "1":
+                case "car":
+                default:
+                    newVehicle.TypeOfVehicle = VehicleType.Car;
+                    break;
+                case "2":
+                case "boat":
+                    newVehicle.TypeOfVehicle = VehicleType.Boat;
+                    break;
+                case "3":
+                case "motorcycle":
+                    newVehicle.TypeOfVehicle = VehicleType.Motorcycle;
+                    break;
+                case "4":
+                case "plane":
+                    newVehicle.TypeOfVehicle = VehicleType.Plane;
+                    break;
+            }
+
+            _vehicleRepo.AddVehicleToList(newVehicle);
         }
     }
 }

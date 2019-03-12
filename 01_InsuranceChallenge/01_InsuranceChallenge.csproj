@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B72B074D-26BB-4C24-8E0A-6EA67BCA6FE9}</ProjectGuid>
+    <ProjectGuid>{6D5D0F8C-663D-4CE6-B94D-53FF2FAB7B17}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Challenges</RootNamespace>
-    <AssemblyName>Challenges</AssemblyName>
+    <RootNamespace>_01_InsuranceChallenge</RootNamespace>
+    <AssemblyName>01_InsuranceChallenge</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

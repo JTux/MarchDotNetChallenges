@@ -4,12 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Challenges
+namespace _02_Insurance_RepositoryPattern
 {
     class Program
     {
         static void Main(string[] args)
         {
+            ProgramUI program = new ProgramUI();
+            program.Run();
         }
     }
 }

@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.438
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Challenges", "Challenges\Challenges.csproj", "{B72B074D-26BB-4C24-8E0A-6EA67BCA6FE9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_InsuranceChallenge", "01_InsuranceChallenge\01_InsuranceChallenge.csproj", "{6D5D0F8C-663D-4CE6-B94D-53FF2FAB7B17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_Insurance_RepositoryPattern", "02_Insurance_RepositoryPattern\02_Insurance_RepositoryPattern.csproj", "{503EAD1A-F48F-463F-8D0A-362BC346CFF4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B72B074D-26BB-4C24-8E0A-6EA67BCA6FE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B72B074D-26BB-4C24-8E0A-6EA67BCA6FE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B72B074D-26BB-4C24-8E0A-6EA67BCA6FE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B72B074D-26BB-4C24-8E0A-6EA67BCA6FE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D5D0F8C-663D-4CE6-B94D-53FF2FAB7B17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D5D0F8C-663D-4CE6-B94D-53FF2FAB7B17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D5D0F8C-663D-4CE6-B94D-53FF2FAB7B17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D5D0F8C-663D-4CE6-B94D-53FF2FAB7B17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{503EAD1A-F48F-463F-8D0A-362BC346CFF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{503EAD1A-F48F-463F-8D0A-362BC346CFF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{503EAD1A-F48F-463F-8D0A-362BC346CFF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{503EAD1A-F48F-463F-8D0A-362BC346CFF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

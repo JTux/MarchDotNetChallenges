@@ -86,6 +86,10 @@ namespace _03_Developer_RepositoryPattern
                 }
             }
             newTeam.TeamMembers = members;
+            _teamRepo.AddTeamToList(newTeam);
+
+            Console.WriteLine("Team added.");
+            Console.ReadLine();
         }
 
         private void DisplayTeams()
@@ -100,6 +104,7 @@ namespace _03_Developer_RepositoryPattern
                     Console.WriteLine($"{dev.ID}. {dev.LastName}, Has PluralSight: {dev.HasPluralSight}");
                 }
             }
+            Console.ReadLine();
         }
 
         private void GetDevCount()

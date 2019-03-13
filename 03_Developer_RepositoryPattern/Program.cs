@@ -10,7 +10,8 @@ namespace _03_Developer_RepositoryPattern
     {
         static void Main(string[] args)
         {
-
+            ProgramUI program = new ProgramUI();
+            program.Run();
         }
     }
 }
